@@ -1,15 +1,15 @@
 from typing import List
 from collections import Counter
 
-# Mu Solution
-class Solution:
-    def intersect(self, nums1: List[int], nums2: List[int]) -> List[int]:
-        output = []
-        for num in nums1:
-            if num in nums2:
-                output.append(num)
-                nums2.remove(num)
-        return output
+# My Solution
+# class Solution:
+#     def intersect(self, nums1: List[int], nums2: List[int]) -> List[int]:
+#         output = []
+#         for num in nums1:
+#             if num in nums2:
+#                 output.append(num)
+#                 nums2.remove(num)
+#         return output
 
 # Good Solution
 class Solution:
