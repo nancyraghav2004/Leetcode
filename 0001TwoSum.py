@@ -8,6 +8,17 @@ class Solution:
                 if nums[i] + nums[j] == target:
                     return [i, j]
 
+# Good Solution
+class Solution:
+    def twoSum(self, nums: List[int], target: int) -> List[int]:
+        hmap = {}
+        for i in range(len(nums)):
+            if target - nums[i] in hmap:
+                return [hmap[target - nums[i]], i]
+            else: 
+                hmap[nums[i]] = i 
+                
+
 if __name__ == "__main__":
     solution = Solution()
     nums = [2, 7, 11, 15]
